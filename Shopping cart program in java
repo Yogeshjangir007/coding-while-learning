@@ -1,0 +1,39 @@
+import javax.lang.model.element.NestingKind;
+import java.sql.SQLOutput;
+import java.util.Scanner;
+public class Main {
+    public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String name ;
+        String item ;
+        double price ;
+        int quantity ;
+        double total;
+        char currency = '$' ;
+
+        System.out.println("Enter your name : ");
+        name = scanner.nextLine();
+        System.out.println("Enter the item you want to purchase :");
+        item = scanner.nextLine();
+        System.out.println("Enter the price of item: ");
+        price = scanner.nextDouble();
+        System.out.println("Enter the no of quantity you want to purchase : ");
+        quantity = scanner.nextInt();
+
+        total = price * quantity ;
+
+        System.out.println("------- SHOPPING RECEIPT -------");
+        System.out.println("Customer : " + name );
+        System.out.println("Item     : "  + item  );
+        System.out.println("Price    : "  +currency + price);
+        System.out.println("Quantity : "  + quantity);
+        System.out.println("--------------------------------");
+        System.out.println("Total    : "  + currency+total);
+        System.out.printf("Thank you for shopping!");
+
+        scanner.close();
+
+
+
+    }
+}
