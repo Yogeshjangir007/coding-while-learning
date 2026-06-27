@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main  {
+    public static void main (String[] args){
+        Scanner scanner  = new Scanner(System.in);
+
+        // HYPOTENUSE c = Math.sqrt(a² + b²)
+
+        double c;
+        double a;
+        double b;
+
+        System.out.println("Enter the side A(BASE):");
+        a = scanner.nextDouble();
+
+        System.out.println("Enter the side B(PERPENDICULAR) :");
+        b = scanner.nextDouble();
+
+        a = (Math.pow(a , 2));
+        b = (Math.pow(b , 2));
+
+        c = Math.sqrt(a+b) ;
+
+        System.out.println("The Hypotenuse is : " + c);
+
+        scanner.close();
+
+    }
+}
